@@ -233,7 +233,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 1.5rem 0;
-    background: white;
+    background: black;
 }
 
 th, td {
@@ -277,7 +277,7 @@ tr:nth-child(even) {
    Framework Connections
    ========================= */
 .framework-callout {
-    background: linear-gradient(135deg, #f0e7f8, #e9d5ff);
+    background: linear-gradient(135deg,  rgb(73, 72, 72));
     border-left: 5px solid var(--secondary-color);
     border-radius: 8px;
     padding: 1.5rem;
