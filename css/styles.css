@@ -249,7 +249,7 @@ th {
 }
 
 tr:nth-child(even) {
-    background: #f8f9fa;
+    background: black;
 }
 
 .results-table {
@@ -269,7 +269,7 @@ tr:nth-child(even) {
 
 /* Highlight key rows */
 .results-table tr.highlight {
-    background: #fff3cd;
+    background: black;
     font-weight: bold;
 }
 
@@ -277,7 +277,7 @@ tr:nth-child(even) {
    Framework Connections
    ========================= */
 .framework-callout {
-    background: linear-gradient(135deg,  rgb(73, 72, 72));
+    background: linear-gradient(135deg,  rgb(31, 31, 31));
     border-left: 5px solid var(--secondary-color);
     border-radius: 8px;
     padding: 1.5rem;
