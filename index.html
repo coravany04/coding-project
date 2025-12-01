@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Digital humanities research project exploring [your topic]">
     <meta name="author" content="Your Name">
-    <title>Your Project Title | WRIT 20833</title>
+    <title>TROS Audience Perceptions | WRIT 20833</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <nav>
         <ul>
+            <li><a href="#overview">Project Overview</a></li>
             <li><a href="#question">Research Question</a></li>
             <li><a href="#data">Data & Methods</a></li>
+            <li><a href="#group">Group Roles</a></li>
             <li><a href="#analysis">Results & Analysis</a></li>
             <li><a href="#findings">Findings</a></li>
             <li><a href="#reflection">Reflection</a></li>
@@ -20,25 +22,24 @@
     </nav>
 
     <header>
-        <h1>Audience Perceptions of <em>The Rise of Skywalker</em></h1>
-        <p>Your Name | WRIT 20833 | Fall 2025</p>
+        <h1>Audience Perceptions of <em>Star Wars: The Rise of Skywalker</em></h1>
+        <p>David, Cora, TJ, & Sam | WRIT 20833 | Fall 2025</p>
     </header>
 
     <main>
-        <section>
-            <h2>Overview</h2>
+        <section id="overview">
+            <h2>Project Overview</h2>
             <p>
-                Our project is focused on the entertainment industry and audience reactions to films. We are particularly interested in the effect that movie trailers can have on audience perceptions and beliefs about a film before it comes out, and how this can shape expectations before the movie is released. We will use the Star Wars film The Rise of Skywalker, released in 2019, as a case study for this. We chose the film in part because it is relatively recent and is still fresh in cultural memory, and because critic and audience reactions were so split (and for longtime fans, mostly negative). 
+                Our project is focused on the entertainment industry and audience reactions to films. We are particularly interested in the effect that movie trailers can have on audience perceptions and beliefs about a film before it comes out, and how this can shape expectations before the movie is released. We will use the Star Wars film <em>The Rise of Skywalker</em>, released in 2019, as a case study for this. We chose the film in part because it is relatively recent and is still fresh in cultural memory, and because critic and audience reactions were so split (and for longtime fans, mostly negative). 
             </p>
 
         </section>
         
         <section id="question">
             <h2>Research Question</h2>
-            <!-- TODO: Add your research question here -->
-            <p>What do YouTube trailer comment sections of the movie The Rise of Skywalker tell us about people’s expectations for the movie vs their actual reactions, and what can this tell us about how movie trailers can sometimes mislead audiences?</p>
+            <p>What do YouTube trailer comment sections of the movie <em>The Rise of Skywalker</em> tell us about people’s expectations for the movie vs their actual reactions, and what can this tell us about how movie trailers can sometimes mislead audiences?</p>
 
-            <p>We hypothesize that reactions to the trailer for The Rise of Skywalker will be more positive than film reactions because the trailers may have misdirected audiences primarily about the role that Palpatine plays in the film. This demonstrates that movie trailers, especially trailers for major blockbuster films, tend to reveal too much or set expectations too high. In the case of the newer Star Wars movies, the trailers preyed on audience nostalgia for the original Star Wars trilogy and its actors, evoking positive feelings without actually revealing any of the plot details.
+            <p>We hypothesize that reactions to the trailer for <em>The Rise of Skywalker</em> will be more positive than film reactions because the trailers may have misdirected audiences primarily about the role that Palpatine plays in the film. This demonstrates that movie trailers, especially trailers for major blockbuster films, tend to reveal too much or set expectations too high. In the case of the newer Star Wars movies, the trailers preyed on audience nostalgia for the original Star Wars trilogy and its actors, evoking positive feelings without actually revealing any of the plot details.
 </p>
         </section>
 
@@ -47,18 +48,27 @@
 
             <h3>Dataset</h3>
             <!-- TODO: Describe your data collection and methodology -->
-            <p><strong>Data Source:</strong> [Where did you collect your data?]</p>
-            <p><strong>Collection Method:</strong> [How did you gather the data? Instant Data Scraper? API? Manual collection?]</p>
-            <p><strong>Dataset Size:</strong> [Number of items, date range, etc.]</p>
-            <p><strong>Ethical Considerations:</strong> [How did you protect privacy? What ethical decisions did you make?]</p>
+            <p><strong>Data Source:</strong> We collected our data from the YouTube comments section of the final <em>Rise of Skywalker</em> trailer and from audience reviews on the Rotten Tomatoes page.</p>
+            <p><strong>Collection Method:</strong> Because of the sheer amount of data we had to collect for our research, we relied on Instant Data Scraper to scrape comments and reviews.</p>
+            <p><strong>Dataset Size:</strong> The dataset consists of 468 YouTube comments and 561 Rotten Tomatoes audience reviews. The YouTube comments range from six to five years ago, before and immediately after the movie's release, while the Rotten Tomatoes reviews range from July 25, 2022 to as recent as October 20, 2025. This gap in time was essential for us to compare how people's perceptions of the film differed over time.</p>
+            <p><strong>Ethical Considerations:</strong> Because these reviews are all public and easily accessible online, we had no qualms about scraping them for data collection purposes. It's important to note that neither YouTube nor Rotten Tomatoes shows the actual full name of the commentor/reviewer and just shows a username, so the privacy of the people who wrote these stays intact.</p>
 
             <h3>Analysis Methods</h3>
             <p><strong>Tools:</strong> Python (pandas, VADER, Gensim)</p>
             <ul>
-                <li><strong>Term Frequency Analysis:</strong> [Brief description of how you used this method]</li>
-                <li><strong>Sentiment Analysis (VADER):</strong> [What sentiment patterns did you look for?]</li>
+                <li><strong>Term Frequency Analysis:</strong> By gathering the most dominant terms, we can better understand the common ideas of these comments. Therefore, we can better make claims as to what people are commenting/reviewing about. </li>
+                <li><strong>Sentiment Analysis (VADER):</strong> We hypothesize that sentiment analysis will reveal the YouTube comments to be generally more positive than the film reviews because many of them were written before the film's release.</li>
                 <li><strong>Topic Modeling (Gensim LDA):</strong> [How many topics? What did you discover?]</li>
             </ul>
+        </section>
+
+        <section id="group">
+            <h2>Group Roles & Responsibilities</h2>
+            <p>
+                Early on, we split up the responsibilities of the project between the group members in a way that highlights our academic strengths. It was decided that David would be the data programmer due to being the most experienced and most comfortable with coding, including Python; Cora would be the website programmer due to having experience with HTML and CSS; Sam would be co-data programmer and write the final essay/copy on the website due to being the least experienced with code. Later, TJ joined our group because of scheduling conflicts with his group and we decided that he would assist with data scraping and writing as well, keeping the work as evenly split as possible.
+
+            </p>
+
         </section>
 
         <section id="analysis">
