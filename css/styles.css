@@ -11,7 +11,22 @@
   --text-color: yellow; 
   --link-color: yellow;  
   --accent-color: yellow; 
+} 
+
+/* This is where I put in my own code to try and make the background an image (specifically starsbg.png)
+
+body {
+background-image: url("../images/starsbg.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+    
+:root {
+    --text-color: yellow; 
+    --link-color: yellow;  
+    --accent-color: yellow; 
+  }*/
 
 /* =========================
    Basic Reset & Typography
@@ -249,7 +264,7 @@ th {
 }
 
 tr:nth-child(even) {
-    background: #f8f9fa;
+    background: #000000;
 }
 
 .results-table {
@@ -269,7 +284,7 @@ tr:nth-child(even) {
 
 /* Highlight key rows */
 .results-table tr.highlight {
-    background: #fff3cd;
+    background: #000000;
     font-weight: bold;
 }
 
