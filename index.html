@@ -80,9 +80,28 @@
 
             <!-- Single visualization with caption -->
             <figure class="viz-container">
-                <img src="images/sentiment-distribution.png"
-                     alt="Bar chart showing distribution of positive, negative, and neutral sentiment">
-                <figcaption>Figure 1: Distribution of sentiment scores across dataset</figcaption>
+                <img src="images/sentdist.png"
+                     alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Youtube">
+                <figcaption>Figure 1: Distribution of sentiment scores across dataset: Youtube</figcaption>
+                <img src="images/rtsentdist.png"
+                alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Rotten Tomatoes">
+                <figcaption>Figure 1.5: Distribution of sentiment scores across dataset: Rotton Tomatoes</figcaption>
+            </figure>
+            <figure class="viz-container">
+                <img src="images/topwords.png"
+                     alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Youtube">
+                <figcaption>Figure 2: Top words in positive and negative entries: Youtube</figcaption>
+                <img src="images/rttopwords.png"
+                alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Rotten Tomatoes">
+                <figcaption>Figure 2.5: Top words in positive and negative entries: Rotton Tomatoes</figcaption>
+            </figure>
+            <figure class="viz-container">
+                <img src="images/sentimentscores.png"
+                     alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Youtube">
+                <figcaption>Figure 3: Top words in positive and negative entries: Youtube</figcaption>
+                <img src="images/rtsentimentscores.png"
+                alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Rotten Tomatoes">
+                <figcaption>Figure 3.5: Top words in positive and negative entries: Rotton Tomatoes</figcaption>
             </figure>
 
             <h3>Code Example</h3>
@@ -111,15 +130,21 @@ df['sentiment'] = df['compound'].apply(
             <!-- Multiple visualizations in a grid -->
             <div class="viz-grid">
                 <figure class="viz-container">
-                    <img src="images/topic-model.png"
+                    <img src="images/topics.png"
                          alt="Visualization of topic clusters from LDA analysis">
-                    <figcaption>Figure 2: Topic clusters from LDA analysis</figcaption>
+                    <figcaption>Figure 4: Topic clusters from LDA analysis: Youtube</figcaption>
+                    <img src="images/rttopics.png"
+                         alt="Visualization of topic clusters from LDA analysis">
+                    <figcaption>Figure 4.5: Topic clusters from LDA analysis: Rotton Tomatoes</figcaption>
                 </figure>
 
                 <figure class="viz-container">
-                    <img src="images/word-cloud.png"
+                    <img src="images/frequentwords.png"
                          alt="Word cloud showing most frequent terms">
-                    <figcaption>Figure 3: Most common terms in the corpus</figcaption>
+                    <figcaption>Figure 5: Most common terms in the corpus: Youtube</figcaption>
+                    <img src="images/rtfrequentwords.png"
+                         alt="Word cloud showing most frequent terms">
+                    <figcaption>Figure 5.5: Most common terms in the corpus: Rotton Tomatoes</figcaption>
                 </figure>
             </div>
         </section>

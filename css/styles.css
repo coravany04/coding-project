@@ -13,7 +13,27 @@
   --accent-color: yellow; 
 } 
 
-/* This is where I put in my own code to try and make the background an image (specifically starsbg.png)
+body {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    background-image: url("../images/starsbg.png");
+    
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    
+    background-position: center;
+    
+    line-height: 1.6;
+    
+    color: var(--text-color);
+    
+    background-color: var(--bg-color);
+    
+    }
+
+/* This is where I put in my own code to try and make the background an image (specifically starsbg.png) OK that did not work so Dr. Rode helped me out and wrote THAT ^^ code to help us out.
 
 body {
 background-image: url("../images/starsbg.png"); 
