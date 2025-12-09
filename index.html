@@ -37,7 +37,7 @@
         
         <section id="question">
             <h2>Research Question</h2>
-            <p>What do YouTube trailer comment sections of the movie <em>The Rise of Skywalker</em> tell us about people’s expectations for the movie vs their actual reactions, and what can this tell us about how movie trailers can sometimes mislead audiences?</p>
+            <p>What do YouTube trailer comment sections of the movie <em>The Rise of Skywalker</em> tell us about people's expectations for the movie vs their actual reactions, and what can this tell us about how movie trailers can sometimes mislead audiences?</p>
 
             <p>We hypothesize that reactions to the trailer for <em>The Rise of Skywalker</em> will be more positive than film reactions because the trailers may have misdirected audiences primarily about the role that Palpatine plays in the film. This demonstrates that movie trailers, especially trailers for major blockbuster films, tend to reveal too much or set expectations too high. In the case of the newer Star Wars movies, the trailers preyed on audience nostalgia for the original Star Wars trilogy and its actors, evoking positive feelings without actually revealing any of the plot details.
 </p>
@@ -58,14 +58,14 @@
             <ul>
                 <li><strong>Term Frequency Analysis:</strong> By gathering the most dominant terms, we can better understand the common ideas of these comments. Therefore, we can better make claims as to what people are commenting/reviewing about. </li>
                 <li><strong>Sentiment Analysis (VADER):</strong> We hypothesize that sentiment analysis will reveal the YouTube comments to be generally more positive than the film reviews because many of them were written before the film's release.</li>
-                <li><strong>Topic Modeling (Gensim LDA):</strong> [How many topics? What did you discover?]</li>
+                <li><strong>Topic Modeling (Gensim LDA):</strong> We ran 4 topics in order to receive a better understanding of the samples we were working with. We discovered how the topics varied between YouTube comments and Rotten Tomatoes Reviews. YouTube comments tend to involve more sarcasm and jokes. This contrasts with Rotten Tomatoes Reviews, which seemed to express frustration over Luke Skywalker's and Emperor Palpatine's character development.</li>
             </ul>
         </section>
 
         <section id="group">
             <h2>Group Roles & Responsibilities</h2>
             <p>
-                Early on, we split up the responsibilities of the project between the group members in a way that highlights our academic strengths. It was decided that David would be the data programmer due to being the most experienced and most comfortable with coding, including Python; Cora would be the website programmer due to having experience with HTML and CSS; Sam would be co-data programmer and write the final essay/copy on the website due to being the least experienced with code. Later, TJ joined our group because of scheduling conflicts with his group and we decided that he would assist with data scraping and writing as well, keeping the work as evenly split as possible.
+                Early on, we split up the responsibilities of the project between the group members in a way that highlights our academic strengths. It was decided that David would be the data programmer due to being the most experienced and most comfortable with coding, including Python; Cora would be the website programmer due to having experience with HTML and CSS; Sam would be co-data programmer and write the final essay/copy on the website due to being the least experienced with code. Later, TJ joined our group because of scheduling conflicts with his group and we decided that he would assist with data scraping, Google collab, and writing as well, keeping the work as evenly split as possible.
 
             </p>
 
@@ -218,7 +218,7 @@ df['sentiment'] = df['compound'].apply(
 
             <div class="framework-callout">
                 <h3>🤖 AI Agency</h3>
-                <p>The use of topic modeling and sentiment analysis demonstrates <strong>AI Agency</strong> concerns. While the algorithms appear to "discover" meaning, the interpretation and framing of results remains entirely human. [Explain further...]</p>
+                <p>The use of topic modeling and sentiment analysis demonstrates <strong>AI Agency</strong> concerns. While the algorithms appear to "discover" meaning, the interpretation and framing of results remains entirely human. We believe in an era where artificial intelligence is increasingly becoming more aware of human norms, it cannot fully comprehend and appreciate human sarcasm and genuine critique. The ability to think and read critically in an academic setting was necessary to better conduct our analysis. The context of the samples the algorithms discovered were presented in a "factual" light, human understanding and basic level context reveals that YouTube commentors love trolling and leaving snarky messages rather than nonsensical movie statements. The algorithms had a slightly better time "discovering" themes in the Rotten Tomatoes samples, but there were still certain examples where the algorithms would over-analyize sarcasm. Ultimately, although AI can help reduce the amount of time it takes to go through every single sample, human understanding and evaluation is desperately needed to fully comprehend data discoveries.</p>
             </div>
 
             <h3>Limitations & Future Directions</h3>
@@ -230,9 +230,9 @@ df['sentiment'] = df['compound'].apply(
 
     <footer>
         <p>📊 <strong>Project Materials:</strong>
-            <a href="https://github.com/yourusername/project-name">View Google Colab Notebooks & Data on GitHub</a>
+            <a href="https://github.com/coravany04/coding-project">View Google Colab Notebooks & Data on GitHub</a>
         </p>
-        <p>&copy; 2025 Your Name | WRIT 20833: Introduction to Coding in the Humanities</p>
+        <p>&copy; 2025 David, Cora, TJ, & Sam | WRIT 20833: Introduction to Coding in the Humanities</p>
     </footer>
 </body>
 </html>
