@@ -37,9 +37,9 @@
         
         <section id="question">
             <h2>Research Question</h2>
-            <p>What do YouTube trailer comment sections of the movie <em>The Rise of Skywalker</em> tell us about people’s expectations for the movie vs their actual reactions, and what can this tell us about how movie trailers can sometimes mislead audiences?</p>
+            <p>What does comparing YouTube trailer comment sections with Rotten Tomatoes audience reviews of the movie <em>The Rise of Skywalker</em> tell us about people’s expectations for the movie versus their actual reactions, and what can this tell us about how movie trailers can sometimes mislead audiences?</p>
 
-            <p>We hypothesize that reactions to the trailer for <em>The Rise of Skywalker</em> will be more positive than film reactions because the trailers may have misdirected audiences primarily about the role that Palpatine plays in the film. This demonstrates that movie trailers, especially trailers for major blockbuster films, tend to reveal too much or set expectations too high. In the case of the newer Star Wars movies, the trailers preyed on audience nostalgia for the original Star Wars trilogy and its actors, evoking positive feelings without actually revealing any of the plot details.
+            <p>We hypothesize that reactions to the trailer for <em>The Rise of Skywalker</em> will be more positive than film reactions because the trailers may have misdirected audiences primarily about the role that Palpatine plays in the film. This demonstrates that movie trailers, especially trailers for major blockbuster films, tend to reveal too much or set expectations too high. In the case of the newer <em>Star Wars</em> movies, the trailers preyed on audience nostalgia for the original Star Wars trilogy and its actors, evoking positive feelings without actually revealing any of the plot details.
 </p>
         </section>
 
@@ -48,9 +48,9 @@
 
             <h3>Dataset</h3>
             <!-- TODO: Describe your data collection and methodology -->
-            <p><strong>Data Source:</strong> We collected our data from the YouTube comments section of the final <em>Rise of Skywalker</em> trailer and from audience reviews on the Rotten Tomatoes page.</p>
-            <p><strong>Collection Method:</strong> Because of the sheer amount of data we had to collect for our research, we relied on Instant Data Scraper to scrape comments and reviews.</p>
-            <p><strong>Dataset Size:</strong> The dataset consists of 468 YouTube comments and 561 Rotten Tomatoes audience reviews. The YouTube comments range from six to five years ago, before and immediately after the movie's release, while the Rotten Tomatoes reviews range from July 25, 2022 to as recent as October 20, 2025. This gap in time was essential for us to compare how people's perceptions of the film differed over time.</p>
+            <p><strong>Data Source:</strong> We collected our data from the YouTube comments section of the final <em>Rise of Skywalker</em> trailer <a href="https://www.youtube.com/watch?v=8Qn_spdM5Zg">found here</a> and from audience reviews on the Rotten Tomatoes page <a href="https://www.rottentomatoes.com/m/star_wars_the_rise_of_skywalker/reviews/all-audience">found here</a>.</p>
+            <p><strong>Collection Method:</strong> Because of the sheer amount of data we had to collect for our research, we relied on Instant Data Scraper to scrape comments and reviews. This is a highly efficient tool that allows us to scrape large amounts of data in a short amount of time and export it in a neatly organized table.</p>
+            <p><strong>Dataset Size:</strong> The dataset consists of 468 YouTube comments and 561 Rotten Tomatoes audience reviews. The YouTube comments range from six to five years ago, before and immediately after the movie's release, while the Rotten Tomatoes reviews range from July 25, 2022 to as recent as October 20, 2025. This gap in time was essential for us to compare how people's perceptions of the film differed over time, in part because it's fairly common for people to change their opinions of a movie after a period of time has passed.</p>
             <p><strong>Ethical Considerations:</strong> Because these reviews are all public and easily accessible online, we had no qualms about scraping them for data collection purposes. It's important to note that neither YouTube nor Rotten Tomatoes shows the actual full name of the commentor/reviewer and just shows a username, so the privacy of the people who wrote these stays intact.</p>
 
             <h3>Analysis Methods</h3>
@@ -58,7 +58,7 @@
             <ul>
                 <li><strong>Term Frequency Analysis:</strong> By gathering the most dominant terms, we can better understand the common ideas of these comments. Therefore, we can better make claims as to what people are commenting/reviewing about. </li>
                 <li><strong>Sentiment Analysis (VADER):</strong> We hypothesize that sentiment analysis will reveal the YouTube comments to be generally more positive than the film reviews because many of them were written before the film's release.</li>
-                <li><strong>Topic Modeling (Gensim LDA):</strong> [How many topics? What did you discover?]</li>
+                <li><strong>Topic Modeling (Gensim LDA):</strong> We ran 4 topics in order to receive a better understanding of the samples we were working with. We discovered how the topics varied between YouTube comments and Rotten Tomatoes Reviews. YouTube comments tend to involve more sarcasm and jokes, which makes sense considering YouTube comment sections tend to be pretty unserious and full of memes. This contrasts with Rotten Tomatoes Reviews, which seemed to express frustration over Luke Skywalker's and Emperor Palpatine's character development. This signals how Rotten Tomatoes users are generally more concerned with the actual quality of the movie and focus on technical aspects like the writing or cinematography.</li>
             </ul>
         </section>
 
@@ -75,37 +75,49 @@
             <h2>Results & Analysis</h2>
             <!-- TODO: Add visualizations and code snippets -->
 
+            <h3>Term Frequency Analysis Results</h3>
+            <p>Using term frequency analysis, we examined the most common words to appear in both the YouTube comments and Rotten Tomatoes audience reviews, respectively; visualizations of our results can be found below. </p>
+
+<figure class="viz-container">
+                <img src="images/frequentwords.png"
+                     alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Youtube">
+                <figcaption>Figure 1: Most common terms in the corpus: Youtube</figcaption>
+                <img src="images/rtfrequentwords.png"
+                alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Rotten Tomatoes">
+                <figcaption>Figure 1.5: Most common terms in the corpus: Rotton Tomatoes</figcaption>
+            </figure>
+
             <h3>Sentiment Analysis Results</h3>
-            <p>Using VADER sentiment analysis, I examined [describe what you analyzed]...</p>
+            <p>Using VADER sentiment analysis, we pulled the top words that appeared in comments and reviews that the model flagged as either positive or negative. Visualizations of our results can be found below.</p>
 
             <!-- Single visualization with caption -->
             <figure class="viz-container">
                 <img src="images/sentdist.png"
                      alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Youtube">
-                <figcaption>Figure 1: Distribution of sentiment scores across dataset: Youtube</figcaption>
+                <figcaption>Figure 2: Distribution of sentiment scores across dataset: Youtube</figcaption>
                 <img src="images/rtsentdist.png"
                 alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Rotten Tomatoes">
-                <figcaption>Figure 1.5: Distribution of sentiment scores across dataset: Rotton Tomatoes</figcaption>
+                <figcaption>Figure 2.5: Distribution of sentiment scores across dataset: Rotton Tomatoes</figcaption>
             </figure>
             <figure class="viz-container">
                 <img src="images/topwords.png"
                      alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Youtube">
-                <figcaption>Figure 2: Top words in positive and negative entries: Youtube</figcaption>
+                <figcaption>Figure 3: Top words in positive and negative entries: Youtube</figcaption>
                 <img src="images/rttopwords.png"
                 alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Rotten Tomatoes">
-                <figcaption>Figure 2.5: Top words in positive and negative entries: Rotton Tomatoes</figcaption>
+                <figcaption>Figure 3.5: Top words in positive and negative entries: Rotton Tomatoes</figcaption>
             </figure>
             <figure class="viz-container">
                 <img src="images/sentimentscores.png"
                      alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Youtube">
-                <figcaption>Figure 3: Top words in positive and negative entries: Youtube</figcaption>
+                <figcaption>Figure 4: Top words in positive and negative entries: Youtube</figcaption>
                 <img src="images/rtsentimentscores.png"
                 alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Rotten Tomatoes">
-                <figcaption>Figure 3.5: Top words in positive and negative entries: Rotton Tomatoes</figcaption>
+                <figcaption>Figure 4.5: Top words in positive and negative entries: Rotton Tomatoes</figcaption>
             </figure>
 
             <h3>Code Example</h3>
-            <p>Here's how I implemented the sentiment analysis using <code>vaderSentiment</code>:</p>
+            <p>Here's how we implemented the sentiment analysis using <code>vaderSentiment</code>:</p>
 
             <div class="code-title">sentiment_analysis.py</div>
             <pre><code>from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
@@ -125,26 +137,17 @@ df['sentiment'] = df['compound'].apply(
 )</code></pre>
 
             <h3>Topic Modeling Results</h3>
-            <p>Using Gensim's LDA implementation, I identified [number] major topics...</p>
+            <p>Using Gensim's LDA implementation, we identified four major topics for both the YouTube comments and Rotten Tomatoes reviews. Visualizations of the data can be found below.</p>
 
             <!-- Multiple visualizations in a grid -->
             <div class="viz-grid">
                 <figure class="viz-container">
                     <img src="images/topics.png"
                          alt="Visualization of topic clusters from LDA analysis">
-                    <figcaption>Figure 4: Topic clusters from LDA analysis: Youtube</figcaption>
+                    <figcaption>Figure 5: Topic clusters from LDA analysis: Youtube</figcaption>
                     <img src="images/rttopics.png"
                          alt="Visualization of topic clusters from LDA analysis">
-                    <figcaption>Figure 4.5: Topic clusters from LDA analysis: Rotton Tomatoes</figcaption>
-                </figure>
-
-                <figure class="viz-container">
-                    <img src="images/frequentwords.png"
-                         alt="Word cloud showing most frequent terms">
-                    <figcaption>Figure 5: Most common terms in the corpus: Youtube</figcaption>
-                    <img src="images/rtfrequentwords.png"
-                         alt="Word cloud showing most frequent terms">
-                    <figcaption>Figure 5.5: Most common terms in the corpus: Rotton Tomatoes</figcaption>
+                    <figcaption>Figure 5.5: Topic clusters from LDA analysis: Rotton Tomatoes</figcaption>
                 </figure>
             </div>
         </section>
@@ -218,7 +221,7 @@ df['sentiment'] = df['compound'].apply(
 
             <div class="framework-callout">
                 <h3>🤖 AI Agency</h3>
-                <p>The use of topic modeling and sentiment analysis demonstrates <strong>AI Agency</strong> concerns. While the algorithms appear to "discover" meaning, the interpretation and framing of results remains entirely human. [Explain further...]</p>
+                <p>The use of topic modeling and sentiment analysis demonstrates <strong>AI Agency</strong> concerns. While the algorithms appear to "discover" meaning, the interpretation and framing of results remains entirely human. We believe in an era where artificial intelligence is increasingly becoming more aware of human norms, it cannot fully comprehend and appreciate human sarcasm and genuine critique. The ability to think and read critically in an academic setting was necessary to better conduct our analysis. The context of the samples the algorithms discovered were presented in a "factual" light, human understanding and basic level context reveals that YouTube commentors love trolling and leaving snarky messages rather than nonsensical movie statements. The algorithms had a slightly better time "discovering" themes in the Rotten Tomatoes samples, but there were still certain examples where the algorithms would over-analyize sarcasm. Ultimately, although AI can help reduce the amount of time it takes to go through every single sample, human understanding and evaluation is desperately needed to fully comprehend data discoveries.</p>
             </div>
 
             <h3>Limitations & Future Directions</h3>
@@ -230,9 +233,9 @@ df['sentiment'] = df['compound'].apply(
 
     <footer>
         <p>📊 <strong>Project Materials:</strong>
-            <a href="https://github.com/yourusername/project-name">View Google Colab Notebooks & Data on GitHub</a>
+            <a href="https://github.com/coravany04/coding-project">View Google Colab Notebooks & Data on GitHub</a>
         </p>
-        <p>&copy; 2025 Your Name | WRIT 20833: Introduction to Coding in the Humanities</p>
+        <p>&copy; 2025 David, Cora, TJ, & Sam | WRIT 20833: Introduction to Coding in the Humanities</p>
     </footer>
 </body>
 </html>
