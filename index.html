@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Digital humanities research project exploring [your topic]">
+    <meta name="description" content="Digital humanities research project exploring audience perceptions of The Rise of Skywalker">
     <meta name="author" content="Your Name">
     <title>TROS Audience Perceptions | WRIT 20833</title>
     <link rel="stylesheet" href="css/styles.css">
@@ -37,9 +37,13 @@
         
         <section id="question">
             <h2>Research Question</h2>
+<<<<<<< HEAD
             <p>What do YouTube trailer comment sections of the movie <em>The Rise of Skywalker</em> tell us about people's expectations for the movie vs their actual reactions, and what can this tell us about how movie trailers can sometimes mislead audiences?</p>
+=======
+            <p>What does comparing YouTube trailer comment sections with Rotten Tomatoes audience reviews of the movie <em>The Rise of Skywalker</em> tell us about people’s expectations for the movie versus their actual reactions, and what can this tell us about how movie trailers can sometimes mislead audiences?</p>
+>>>>>>> 4808ffd14fd1fc1794f0133877a8cd1e121f1239
 
-            <p>We hypothesize that reactions to the trailer for <em>The Rise of Skywalker</em> will be more positive than film reactions because the trailers may have misdirected audiences primarily about the role that Palpatine plays in the film. This demonstrates that movie trailers, especially trailers for major blockbuster films, tend to reveal too much or set expectations too high. In the case of the newer Star Wars movies, the trailers preyed on audience nostalgia for the original Star Wars trilogy and its actors, evoking positive feelings without actually revealing any of the plot details.
+            <p>We hypothesize that reactions to the trailer for <em>The Rise of Skywalker</em> will be more positive than film reactions because the trailers may have misdirected audiences primarily about the role that Palpatine plays in the film. This demonstrates that movie trailers, especially trailers for major blockbuster films, tend to reveal too much or set expectations too high. In the case of the newer <em>Star Wars</em> movies, the trailers preyed on audience nostalgia for the original Star Wars trilogy and its actors, evoking positive feelings without actually revealing any of the plot details.
 </p>
         </section>
 
@@ -48,9 +52,9 @@
 
             <h3>Dataset</h3>
             <!-- TODO: Describe your data collection and methodology -->
-            <p><strong>Data Source:</strong> We collected our data from the YouTube comments section of the final <em>Rise of Skywalker</em> trailer and from audience reviews on the Rotten Tomatoes page.</p>
-            <p><strong>Collection Method:</strong> Because of the sheer amount of data we had to collect for our research, we relied on Instant Data Scraper to scrape comments and reviews.</p>
-            <p><strong>Dataset Size:</strong> The dataset consists of 468 YouTube comments and 561 Rotten Tomatoes audience reviews. The YouTube comments range from six to five years ago, before and immediately after the movie's release, while the Rotten Tomatoes reviews range from July 25, 2022 to as recent as October 20, 2025. This gap in time was essential for us to compare how people's perceptions of the film differed over time.</p>
+            <p><strong>Data Source:</strong> We collected our data from the YouTube comments section of the final <em>Rise of Skywalker</em> trailer <a href="https://www.youtube.com/watch?v=8Qn_spdM5Zg">found here</a> and from audience reviews on the Rotten Tomatoes page <a href="https://www.rottentomatoes.com/m/star_wars_the_rise_of_skywalker/reviews/all-audience">found here</a>.</p>
+            <p><strong>Collection Method:</strong> Because of the sheer amount of data we had to collect for our research, we relied on Instant Data Scraper to scrape comments and reviews. This is a highly efficient tool that allows us to scrape large amounts of data in a short amount of time and export it in a neatly organized table.</p>
+            <p><strong>Dataset Size:</strong> The dataset consists of 468 YouTube comments and 561 Rotten Tomatoes audience reviews. The YouTube comments range from six to five years ago, before and immediately after the movie's release, while the Rotten Tomatoes reviews range from July 25, 2022 to as recent as October 20, 2025. This gap in time was essential for us to compare how people's perceptions of the film differed over time, in part because it's fairly common for people to change their opinions of a movie after a period of time has passed.</p>
             <p><strong>Ethical Considerations:</strong> Because these reviews are all public and easily accessible online, we had no qualms about scraping them for data collection purposes. It's important to note that neither YouTube nor Rotten Tomatoes shows the actual full name of the commentor/reviewer and just shows a username, so the privacy of the people who wrote these stays intact.</p>
 
             <h3>Analysis Methods</h3>
@@ -58,7 +62,11 @@
             <ul>
                 <li><strong>Term Frequency Analysis:</strong> By gathering the most dominant terms, we can better understand the common ideas of these comments. Therefore, we can better make claims as to what people are commenting/reviewing about. </li>
                 <li><strong>Sentiment Analysis (VADER):</strong> We hypothesize that sentiment analysis will reveal the YouTube comments to be generally more positive than the film reviews because many of them were written before the film's release.</li>
+<<<<<<< HEAD
                 <li><strong>Topic Modeling (Gensim LDA):</strong> We ran 4 topics in order to receive a better understanding of the samples we were working with. We discovered how the topics varied between YouTube comments and Rotten Tomatoes Reviews. YouTube comments tend to involve more sarcasm and jokes. This contrasts with Rotten Tomatoes Reviews, which seemed to express frustration over Luke Skywalker's and Emperor Palpatine's character development.</li>
+=======
+                <li><strong>Topic Modeling (Gensim LDA):</strong> We ran 5 topics in order to receive a better understanding of the samples we were working with. We discovered how the topics varied between YouTube comments and Rotten Tomatoes Reviews. YouTube comments tend to involve more sarcasm and jokes, which makes sense considering YouTube comment sections tend to be pretty unserious and full of memes. This contrasts with Rotten Tomatoes Reviews, which seemed to express frustration over Luke Skywalker's and Emperor Palpatine's character development. This signals how Rotten Tomatoes users are generally more concerned with the actual quality of the movie and focus on technical aspects like the writing or cinematography.</li>
+>>>>>>> 4808ffd14fd1fc1794f0133877a8cd1e121f1239
             </ul>
         </section>
 
@@ -75,37 +83,33 @@
             <h2>Results & Analysis</h2>
             <!-- TODO: Add visualizations and code snippets -->
 
+            <h3>Term Frequency Analysis Results</h3>
+            <p>Using term frequency analysis, we examined the most common words to appear in both the YouTube comments and Rotten Tomatoes audience reviews, respectively; visualizations of our results can be found below. </p>
+
+<figure class="viz-container">
+                <img src="images/frequentwords.png"
+                     alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Youtube">
+                <figcaption>Figure 1: Most common terms in the corpus: Youtube</figcaption>
+                <img src="images/rtfrequentwords.png"
+                alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Rotten Tomatoes">
+                <figcaption>Figure 1.5: Most common terms in the corpus: Rotton Tomatoes</figcaption>
+            </figure>
+
             <h3>Sentiment Analysis Results</h3>
-            <p>Using VADER sentiment analysis, I examined [describe what you analyzed]...</p>
+            <p>Using VADER sentiment analysis, we analyzed all of the comments and reviews and automatically flagged them as having a positive, negative, or neutral tone. Visualizations of our results can be found below.</p>
 
             <!-- Single visualization with caption -->
             <figure class="viz-container">
-                <img src="images/sentdist.png"
-                     alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Youtube">
-                <figcaption>Figure 1: Distribution of sentiment scores across dataset: Youtube</figcaption>
-                <img src="images/rtsentdist.png"
-                alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Rotten Tomatoes">
-                <figcaption>Figure 1.5: Distribution of sentiment scores across dataset: Rotton Tomatoes</figcaption>
-            </figure>
-            <figure class="viz-container">
-                <img src="images/topwords.png"
-                     alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Youtube">
-                <figcaption>Figure 2: Top words in positive and negative entries: Youtube</figcaption>
-                <img src="images/rttopwords.png"
-                alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Rotten Tomatoes">
-                <figcaption>Figure 2.5: Top words in positive and negative entries: Rotton Tomatoes</figcaption>
-            </figure>
-            <figure class="viz-container">
                 <img src="images/sentimentscores.png"
                      alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Youtube">
-                <figcaption>Figure 3: Top words in positive and negative entries: Youtube</figcaption>
+                <figcaption>Figure 2: Distribution of sentiment scores for YouTube comments</figcaption>
                 <img src="images/rtsentimentscores.png"
                 alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Rotten Tomatoes">
-                <figcaption>Figure 3.5: Top words in positive and negative entries: Rotton Tomatoes</figcaption>
+                <figcaption>Figure 2.5: Distribution of sentiment scores for Rotten Tomatoes reviews</figcaption>
             </figure>
 
             <h3>Code Example</h3>
-            <p>Here's how I implemented the sentiment analysis using <code>vaderSentiment</code>:</p>
+            <p>Here's how we implemented the sentiment analysis using <code>vaderSentiment</code>:</p>
 
             <div class="code-title">sentiment_analysis.py</div>
             <pre><code>from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
@@ -125,28 +129,40 @@ df['sentiment'] = df['compound'].apply(
 )</code></pre>
 
             <h3>Topic Modeling Results</h3>
-            <p>Using Gensim's LDA implementation, I identified [number] major topics...</p>
+            <p>Using Gensim's LDA implementation, we identified five (0-4) major topics for both the YouTube comments and Rotten Tomatoes reviews. Visualizations of the data can be found below.</p>
 
             <!-- Multiple visualizations in a grid -->
             <div class="viz-grid">
                 <figure class="viz-container">
                     <img src="images/topics.png"
                          alt="Visualization of topic clusters from LDA analysis">
-                    <figcaption>Figure 4: Topic clusters from LDA analysis: Youtube</figcaption>
+                    <figcaption>Figure 3: Topic clusters from LDA analysis: Youtube</figcaption>
                     <img src="images/rttopics.png"
                          alt="Visualization of topic clusters from LDA analysis">
-                    <figcaption>Figure 4.5: Topic clusters from LDA analysis: Rotton Tomatoes</figcaption>
-                </figure>
-
-                <figure class="viz-container">
-                    <img src="images/frequentwords.png"
-                         alt="Word cloud showing most frequent terms">
-                    <figcaption>Figure 5: Most common terms in the corpus: Youtube</figcaption>
-                    <img src="images/rtfrequentwords.png"
-                         alt="Word cloud showing most frequent terms">
-                    <figcaption>Figure 5.5: Most common terms in the corpus: Rotton Tomatoes</figcaption>
+                    <figcaption>Figure 3.5: Topic clusters from LDA analysis: Rotton Tomatoes</figcaption>
                 </figure>
             </div>
+
+            <h3>Mixed Methods Results</h3>
+            <p>The following graphs were created through a mix of the methods used above to reveal unique insights. This included analyzing the sentiment distribution of each topic, and pulling the top words that appeared in comments and reviews that the model flagged as either positive or negative.</p>
+<figure class="viz-container">
+                <img src="images/sentdist.png"
+                     alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Youtube">
+                <figcaption>Figure 4: Distribution of sentiment scores across topics: Youtube</figcaption>
+                <img src="images/rtsentdist.png"
+                alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Rotten Tomatoes">
+                <figcaption>Figure 4.5: Distribution of sentiment scores across topics: Rotton Tomatoes</figcaption>
+            </figure>
+            <figure class="viz-container">
+                <img src="images/topwords.png"
+                     alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Youtube">
+                <figcaption>Figure 5: Top words in positive and negative entries: Youtube</figcaption>
+                <img src="images/rttopwords.png"
+                alt="Bar chart showing distribution of positive, negative, and neutral sentiment, Rotten Tomatoes">
+                <figcaption>Figure 5.5: Top words in positive and negative entries: Rotton Tomatoes</figcaption>
+            </figure>
+
+
         </section>
 
         <section id="findings">
@@ -156,13 +172,13 @@ df['sentiment'] = df['compound'].apply(
             <p>The computational analysis revealed three major insights:</p>
 
             <ol>
-                <li><strong>Finding 1:</strong> [Describe your first key discovery]</li>
-                <li><strong>Finding 2:</strong> [Describe your second key discovery]</li>
-                <li><strong>Finding 3:</strong> [Describe your third key discovery]</li>
+                <li><strong>Finding 1:</strong> Across the board, people were most interested in Palpatine's presence in the film, as his name is the seventh most common word in YouTube comments and the third most common in Rotten Tomatoes reviews. This makes sense considering his sudden reappearance after being absent from the previous two movies. The topic modeling was a bit all over the place, but it does seem to imply that the YouTube comments in particular are fixated on this film being marketed as the supposed "end" of the saga (all of the topics have the word "end" as the most important), which is ironic considering it is the third film to be marketed as such. This could imply that people are interested in the return of a central character to the franchise but are potentially frustrated by the ploy of calling it the "end of the saga" to get people to come and see it, which could be seen as a predatory marketing practice. </li>
+                <li><strong>Finding 2:</strong> Fewer Rotten Tomatoes reviews were flagged as "neutral" which resulted in the proportion of both positive and negative being greater than YouTube comments. This can likely be explained by the sheer number of "meme" comments present in YouTube comment sections, which might have confused the model. However, the "average" sentiment score indicated on the bar graph indicates that Rotten Tomatoes reviews were very slightly more positive than YouTube comments. However, the difference is incredibly slight.</li>
+                <li><strong>Finding 3:</strong> Combining term frequency with sentiment analysis yields many interesting results, chief of which being "Palpatine" is listed as a top word in both positive and negative Rotten Tomatoes reviews, but is only a top word in negative YouTube comments. One of the most common words used in positive Rotten Tomatoes reviews is "better," which could be related to people's perceptions of this film being better than the previous one (but perhaps still not good). "Plot" is also one of the top terms in negative reviews; it is one of the top words in positive reviews, too, but to a much smaller extent. </li>
             </ol>
 
             <h3>Detailed Results</h3>
-            <p>Breaking down the sentiment distribution:</p>
+            <p>Breaking down the sentiment distribution for YouTube comments:</p>
 
             <table class="results-table">
                 <thead>
@@ -176,27 +192,60 @@ df['sentiment'] = df['compound'].apply(
                 <tbody>
                     <tr class="highlight">
                         <td>Positive</td>
-                        <td>XXX</td>
-                        <td>XX%</td>
+                        <td>89</td>
+                        <td>19.1%</td>
                         <td>0.XX</td>
                     </tr>
                     <tr>
                         <td>Neutral</td>
-                        <td>XXX</td>
-                        <td>XX%</td>
+                        <td>166</td>
+                        <td>35.5%</td>
                         <td>0.XX</td>
                     </tr>
                     <tr>
                         <td>Negative</td>
-                        <td>XXX</td>
-                        <td>XX%</td>
+                        <td>212</td>
+                        <td>45.4%</td>
+                        <td>-0.XX</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Breaking down the sentiment distribution for Rotten Tomatoes audience reviews:</p>
+
+<table class="results-table">
+                <thead>
+                    <tr>
+                        <th>Sentiment Category</th>
+                        <th>Count</th>
+                        <th>Percentage</th>
+                        <th>Avg. Compound Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="highlight">
+                        <td>Positive</td>
+                        <td>200</td>
+                        <td>35.7%</td>
+                        <td>0.XX</td>
+                    </tr>
+                    <tr>
+                        <td>Neutral</td>
+                        <td>52</td>
+                        <td>9.3%</td>
+                        <td>0.XX</td>
+                    </tr>
+                    <tr>
+                        <td>Negative</td>
+                        <td>308</td>
+                        <td>55%</td>
                         <td>-0.XX</td>
                     </tr>
                 </tbody>
             </table>
 
-            <h3>What Surprised Me</h3>
-            <p>I initially predicted that [your assumption], but the data revealed [what actually happened]. This challenged my understanding because...</p>
+
+            <h3>What Surprised Us</h3>
+            <p>We were greatly surprised by how small the difference was in average sentiment scores between YouTube comments and Rotten Tomatoes reviews. We had initially expected YouTube comments to be more positive because many were written before the film came out, which is when people found out the story and expressed their disappointment. However, this did not turn out to be the case.</p>
         </section>
 
         <section id="reflection">
@@ -222,9 +271,9 @@ df['sentiment'] = df['compound'].apply(
             </div>
 
             <h3>Limitations & Future Directions</h3>
-            <p><strong>What I would do differently:</strong> [Reflect on your process]</p>
-            <p><strong>Questions that remain:</strong> [What would you investigate with more time?]</p>
-            <p><strong>Confidence in conclusions:</strong> [How certain are you about your findings? What caveats should readers consider?]</p>
+            <p><strong>What I would do differently:</strong> Initially, we were interested in comparing YouTube comments posted before the release date of the film with comments posted after the release date. We quickly realized that there was no easy way to sort YouTube comments by date posted and decided instead to go with our current approach (comparing comments to Rotten Tomatoes reviews). If we were given more time, comparing YouTube comments by date might have been more effective than comparing comments to RT reviews, which is a bit like comparing apples to oranges since user behavior varies between each site.This may help us get a more accurate glimps into specifically how reactions differ before and after the movie's release.</p>
+            <p><strong>Questions that remain:</strong> As mentioned above, it would be interesting to see how some YouTube comments compare to others and if the ones before are more positive than the ones after, or if they're generally about the same and full of memes. </p>
+            <p><strong>Confidence in conclusions:</strong> We are moderately certain about our findings. Although we did our best to draw logical conclusions from the data our analysis provided, sentiment scores and topic modeling is still quite subjective and prone to misunderstanding of sarcasm and other rhetorical devices, which we point out above in the AI section.</p>
         </section>
     </main>
 
