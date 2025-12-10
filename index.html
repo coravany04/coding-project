@@ -164,9 +164,9 @@ df['sentiment'] = df['compound'].apply(
             <p>The computational analysis revealed three major insights:</p>
 
             <ol>
-                <li><strong>Finding 1:</strong> Across the board, people were most interested in Palpatine's presence in the film, as his name is the seventh most common word in YouTube comments and the third most common in Rotten Tomatoes reviews. This makes sense considering his sudden reappearance after being absent from the previous two movies. </li>
-                <li><strong>Finding 2:</strong> Fewer Rotten Tomatoes reviews were flagged as "neutral" which resulted in the proportion of both positive and negative being greater than YouTube comments. This can likely be explained by the sheer number of "meme" comments present in YouTube comment sections, which might have confused the model. However, the "average" sentiment score indicated on the bar graph indicates that Rotten Tomatoes reviews were very slightly more positive than YouTube comments.</li>
-                <li><strong>Finding 3:</strong> [Describe your third key discovery]</li>
+                <li><strong>Finding 1:</strong> Across the board, people were most interested in Palpatine's presence in the film, as his name is the seventh most common word in YouTube comments and the third most common in Rotten Tomatoes reviews. This makes sense considering his sudden reappearance after being absent from the previous two movies. The topic modeling was a bit all over the place, but it does seem to imply that the YouTube comments in particular are fixated on this film being marketed as the supposed "end" of the saga (all of the topics have the word "end" as the most important), which is ironic considering it is the third film to be marketed as such. This could imply that people are interested in the return of a central character to the franchise but are potentially frustrated by the ploy of calling it the "end of the saga" to get people to come and see it, which could be seen as a predatory marketing practice. </li>
+                <li><strong>Finding 2:</strong> Fewer Rotten Tomatoes reviews were flagged as "neutral" which resulted in the proportion of both positive and negative being greater than YouTube comments. This can likely be explained by the sheer number of "meme" comments present in YouTube comment sections, which might have confused the model. However, the "average" sentiment score indicated on the bar graph indicates that Rotten Tomatoes reviews were very slightly more positive than YouTube comments. However, the difference is incredibly slight.</li>
+                <li><strong>Finding 3:</strong> Combining term frequency with sentiment analysis yields many interesting results, chief of which being "Palpatine" is listed as a top word in both positive and negative Rotten Tomatoes reviews, but is only a top word in negative YouTube comments. One of the most common words used in positive Rotten Tomatoes reviews is "better," which could be related to people's perceptions of this film being better than the previous one (but perhaps still not good). "Plot" is also one of the top terms in negative reviews; it is one of the top words in positive reviews, too, but to a much smaller extent. </li>
             </ol>
 
             <h3>Detailed Results</h3>
@@ -237,7 +237,7 @@ df['sentiment'] = df['compound'].apply(
 
 
             <h3>What Surprised Us</h3>
-            <p>I initially predicted that [your assumption], but the data revealed [what actually happened]. This challenged my understanding because...</p>
+            <p>We were greatly surprised by how small the difference was in average sentiment scores between YouTube comments and Rotten Tomatoes reviews. We had initially expected YouTube comments to be more positive because many were written before the film came out, which is when people found out the story and expressed their disappointment. However, this did not turn out to be the case.</p>
         </section>
 
         <section id="reflection">
@@ -263,9 +263,9 @@ df['sentiment'] = df['compound'].apply(
             </div>
 
             <h3>Limitations & Future Directions</h3>
-            <p><strong>What I would do differently:</strong> [Reflect on your process]</p>
-            <p><strong>Questions that remain:</strong> Initially, we were interested in comparing YouTube comments posted before the release date of the film with comments posted after the release date. We quickly realized that there was no easy way to sort YouTube comments by date posted and decided instead to go with our current approach (comparing comments to Rotten Tomatoes reviews). If given more time, this would be an interesting topic to explore, to see how some YouTube comments compare to others and if the ones before are more positive than the ones after, or if they're generally about the same and full of memes.</p>
-            <p><strong>Confidence in conclusions:</strong> [How certain are you about your findings? What caveats should readers consider?]</p>
+            <p><strong>What I would do differently:</strong> Initially, we were interested in comparing YouTube comments posted before the release date of the film with comments posted after the release date. We quickly realized that there was no easy way to sort YouTube comments by date posted and decided instead to go with our current approach (comparing comments to Rotten Tomatoes reviews). If we were given more time, comparing YouTube comments by date might have been more effective than comparing comments to RT reviews, which is a bit like comparing apples to oranges since user behavior varies between each site.This may help us get a more accurate glimps into specifically how reactions differ before and after the movie's release.</p>
+            <p><strong>Questions that remain:</strong> As mentioned above, it would be interesting to see how some YouTube comments compare to others and if the ones before are more positive than the ones after, or if they're generally about the same and full of memes. </p>
+            <p><strong>Confidence in conclusions:</strong> We are moderately certain about our findings. Although we did our best to draw logical conclusions from the data our analysis provided, sentiment scores and topic modeling is still quite subjective and prone to misunderstanding of sarcasm and other rhetorical devices, which we point out above in the AI section.</p>
         </section>
     </main>
 
